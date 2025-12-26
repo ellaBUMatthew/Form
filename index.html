@@ -1,0 +1,32 @@
+<div class="form-container">
+  <h1>Sample Survey Form</h1>
+  <p class="form-description">Please fill out the questions below honestly. Your responses will remain confidential.</p>
+
+  <form id="survey-form">
+    <!-- Short answer question -->
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your answer" required>
+    </div>
+
+    <!-- Multiple choice question -->
+    <div class="form-group">
+      <label>What is your favorite color?</label>
+      <div class="choices">
+        <label><input type="radio" name="color" value="Red"> Red</label>
+        <label><input type="radio" name="color" value="Blue"> Blue</label>
+        <label><input type="radio" name="color" value="Green"> Green</label>
+      </div>
+    </div>
+
+    <!-- Paragraph question -->
+    <div class="form-group">
+      <label for="feedback">Any feedback or suggestions?</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your response"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+  <p class="form-footer">Never submit passwords through this form.</p>
+</div>
