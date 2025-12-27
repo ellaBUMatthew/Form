@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting){
-        entry.target.classList.add("active"); // trigger animation
+        entry.target.classList.add("active");
       } else {
-        entry.target.classList.remove("active"); // optional: for scroll up
+        entry.target.classList.remove("active");
       }
     });
-  }, { threshold: 0.3 }); // trigger when 30% of section is visible
+  }, { threshold: 0.3 });
 
   sections.forEach(section => observer.observe(section));
 });
