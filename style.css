@@ -1,26 +1,36 @@
 body {
-  font-family: "Google Sans", Arial, sans-serif;
-  background-color: #f1f3f4;
+  font-family: comic sans ms;
+  background-image: url("https://drive.google.com/uc?export=view&id=1QvBA6dapqefPgq3091p-fnWZ9gCyEJeg");
+  background: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
   padding: 40px;
+  height: 100vh;
   color: #202124;
+  width: 100%;
 }
 
 .form-container {
-  background: #fff;
+  background: #040a1a;
   max-width: 600px;
   width: 100%;
   padding: 32px 40px;
+  border: 5px double #ebff00;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  outline: 3px ridge #00b7ff;
+  box-shadow: 15px -5px 50px rgba(77, 255, 255, 0.75), -15px -5px 50px rgba(240,255,5, 0.75), -15px 20px 50px rgba(0, 0, 0, 1),  15px 20px 50px rgba(0, 0, 0, 1);
 }
 
 h1 {
   font-size: 24px;
   font-weight: 500;
   color: #202124;
+  -webkit-text-stroke: 0.4px white;
   margin-bottom: 8px;
 }
 
@@ -36,7 +46,9 @@ h1 {
 
 label {
   display: block;
+  color: white;
   font-size: 14px;
+  text-shadow: 0 0 5px rgba(77, 255, 255, 1);
   font-weight: 500;
   margin-bottom: 6px;
 }
