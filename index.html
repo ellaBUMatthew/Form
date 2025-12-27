@@ -5,40 +5,42 @@
 </head>
 
 <body>
-<div class="form-container">
-  <h1>Sample Survey Form</h1>
-  <p class="form-description">Please fill out the questions below honestly. Your responses will remain confidential.</p>
+  <header class="main-header">
+    <h1>Brainyanihan Survey</h1>
+  </header>
+
+  <section class="form-container instruction">
+    <h2>Instructions</h2>
+    <p>Please read each question carefully before answering. Scroll down to continue.</p>
+  </section>
 
   <form id="survey-form">
-    <!-- Short answer question -->
-    <div class="form-group">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your answer" required>
+  <section class="form-container question">
+    <h2>Question 1</h2>
+    <label for="q1">Your Name</label>
+    <input type="text" id="q1" placeholder="Enter your answer">
+  </section>
+
+  <section class="form-container question">
+    <h2>Question 2</h2>
+    <label>Favorite color?</label>
+    <div class="choices">
+      <label><input type="radio" name="color" value="Red"> Red</label>
+      <label><input type="radio" name="color" value="Blue"> Blue</label>
+      <label><input type="radio" name="color" value="Green"> Green</label>
     </div>
+  </section>
 
-    <!-- Multiple choice question -->
-    <div class="form-group">
-      <label>What is your favorite color?</label>
-      <div class="choices">
-        <label><input type="radio" name="color" value="Red"> Red</label>
-        <label><input type="radio" name="color" value="Blue"> Blue</label>
-        <label><input type="radio" name="color" value="Green"> Green</label>
-      </div>
-    </div>
+  <section class="form-container question">
+    <h2>Question 3</h2>
+    <label for="feedback">Any feedback or suggestions?</label>
+    <textarea id="feedback" rows="4" placeholder="Enter your response"></textarea>
+  </section>
 
-    <!-- Paragraph question -->
-    <div class="form-group">
-      <label for="feedback">Any feedback or suggestions?</label>
-      <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your response"></textarea>
-    </div>
+  <button type="submit" class="submit-btn">Submit</button>
+</form>
 
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
-
-  <p class="form-footer">Never submit passwords through this form.</p>
-</div>
-
-<div class="form-container">
-  
-</div>
+  <footer class="main-footer">
+    <p>© 2025 Brainyanihan Project | Do not share your passwords in this form.</p>
+  </footer>
 </body>
