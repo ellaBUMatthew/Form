@@ -18,8 +18,8 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.2); /* adjust darkness */
+  z-index: 0;
 }
 
 .form-container {
