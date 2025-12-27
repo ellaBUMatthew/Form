@@ -1,5 +1,5 @@
 body {
-  font-family: comic sans ms;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   background-image: url("https://i.postimg.cc/RZk8tTsV/Brainyanihan-BG.webp");
   background-size: cover;
   background-position: center;
@@ -16,7 +16,6 @@ body::before {
   pointer-events: none;
 }
 
-/* Fixed header */
 .main-header {
   position: fixed;
   top: 0;
@@ -25,24 +24,33 @@ body::before {
   text-align: center;
   z-index: 10;
   font-size: 22px;
+  background: transparent;
 }
 
-.sections {
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.instructions {
+  margin-top: 18vh;
+  margin-bottom: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  background: rgba(4,10,26,1);
+  padding: 10px 40px;
+  border: 4px double #ebff00;
+  border-radius: 2.5em;
 }
 
-
-.form-container {
+.form-container.question {
   position: sticky;
   top: 20vh;
   height: 60vh;
-  max-height: 425px;
-  margin: 0 auto;
+  max-height: calc(60vh - 50px);
   max-width: 600px;
-  background: rgba(4,10,26,0.9);
+  margin: 0 auto;
+  background: rgba(4,10,26,1);
   padding: 40px;
   border: 4px double #ebff00;
   border-radius: 2.5em;
@@ -52,16 +60,68 @@ body::before {
   transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
-
-.form-container.active {
+.form-container.question.active {
   transform: scale(1);
   opacity: 1;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.1);
+}
+
+.choices label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.submit-section {
+  max-width: 200px;
+  margin: 20vh auto;
+  text-align: center;
+  background: rgba(4,10,26,1);
+  padding: 10px;
+  border: 4px double #ebff00;
+  border-radius: 2.5em;
+}
+
+.submit-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1765c0;
 }
 
 .main-footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   font-size: 14px;
   color: #aaa;
 }
