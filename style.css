@@ -18,8 +18,8 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* adjust darkness */
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: -1;
 }
 
 .form-container {
@@ -32,6 +32,15 @@ body::before {
   outline: 3px ridge #00b7ff;
   box-shadow: 15px -5px 50px rgba(77, 255, 255, 0.75), -15px -5px 50px rgba(240,255,5, 0.75), -15px 20px 50px rgba(0, 0, 0, 1),  15px 20px 50px rgba(0, 0, 0, 1);
 }
+
+div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: -1;
+}
+
 
 h1 {
   font-size: 24px;
