@@ -1,7 +1,6 @@
 body {
   font-family: comic sans ms;
   background-image: url("BrainyanihanBG.webp");
-  background: rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -13,6 +12,14 @@ body {
   height: 100vh;
   color: #202124;
   width: 100%;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* adjust darkness */
+  z-index: 0;
 }
 
 .form-container {
