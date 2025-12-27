@@ -1,7 +1,7 @@
-<head>
+<head> 
   <title>Brainyanihan Survey</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/tCNrmj4x/DOST-sa-NORSU-logo.webp">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/tCNrmj4x/DOST-sa-NORSU-logo.webp"> 
 </head>
 
 <body>
@@ -9,21 +9,23 @@
     <h1>Brainyanihan Survey</h1>
   </header>
 
-  <section class="form-container instruction">
+  <!-- Instructions: normal scroll -->
+  <section class="instructions">
     <h2>Instructions</h2>
     <p>Please read each question carefully before answering. Scroll down to continue.</p>
   </section>
 
-  <form id="survey-form">
+  <!-- Question 1 -->
   <section class="form-container question">
     <h2>Question 1</h2>
     <label for="q1">Your Name</label>
     <input type="text" id="q1" placeholder="Enter your answer">
   </section>
 
+  <!-- Question 2 -->
   <section class="form-container question">
     <h2>Question 2</h2>
-    <label>Favorite color?</label>
+    <label>What is your favorite color?</label>
     <div class="choices">
       <label><input type="radio" name="color" value="Red"> Red</label>
       <label><input type="radio" name="color" value="Blue"> Blue</label>
@@ -31,14 +33,17 @@
     </div>
   </section>
 
+  <!-- Question 3 -->
   <section class="form-container question">
     <h2>Question 3</h2>
     <label for="feedback">Any feedback or suggestions?</label>
     <textarea id="feedback" rows="4" placeholder="Enter your response"></textarea>
   </section>
 
-  <button type="submit" class="submit-btn">Submit</button>
-</form>
+  <!-- Submit section -->
+  <section class="submit-section">
+    <button type="submit" class="submit-btn">Submit</button>
+  </section>
 
   <footer class="main-footer">
     <p>© 2025 Brainyanihan Project | Do not share your passwords in this form.</p>
