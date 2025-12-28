@@ -24,7 +24,7 @@ body::before {
   padding: 2vh 0;
   text-align: center;
   z-index: 10;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: calc(20px + 0.3vw);
   background: transparent;
 }
 
@@ -38,14 +38,14 @@ body::before {
   border: 4px double #ebff00;
   border-radius: 2em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
   line-height: 1.5;
 }
 
 .form-container.question {
   position: sticky;
   top: 18vh;
-  height: 60vh;
+  height: calc(20vh + 10vw);
   width: min(90%, 640px);
   margin: 8vh auto;
   background: rgba(4, 10, 26, 0.95);
@@ -66,7 +66,7 @@ body::before {
 label {
   display: block;
   margin-top: 2vh;
-  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
 }
 
 input[type="text"],
@@ -75,7 +75,7 @@ textarea {
   padding: 1em;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
   margin-top: 0.5em;
   background: #fff;
   color: #000;
@@ -90,7 +90,7 @@ textarea:focus {
 
 .choices label {
   display: block;
-  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
   margin-bottom: 0.5em;
   cursor: pointer;
 }
@@ -111,7 +111,7 @@ textarea:focus {
   color: white;
   border: none;
   padding: 12px 24px;
-  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
   border-radius: 0.5em;
   cursor: pointer;
   transition: background 0.2s;
@@ -125,7 +125,7 @@ textarea:focus {
   text-align: center;
   padding: 3vh 2vw;
   background: rgba(0, 0, 0, 0.6);
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: calc(20px + 0.3vw);
   color: #aaa;
 }
 
