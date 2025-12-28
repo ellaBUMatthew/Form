@@ -45,7 +45,7 @@ body::before {
 .form-container.question {
   position: sticky;
   top: 18vh;
-  height: calc(20vh + 15vw);
+  height: calc(18vh + 15vw);
   width: min(90%, 640px);
   margin: calc(2vh + 5vw) auto;
   background: rgba(4, 10, 26, 0.95);
@@ -75,7 +75,7 @@ textarea {
   padding: 1em;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: calc(22px - 1vw);
+  font-size: calc(26px - 1vw);
   margin-top: 0.5em;
   background: #fff;
   color: #000;
