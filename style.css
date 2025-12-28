@@ -47,7 +47,7 @@ body::before {
   top: 18vh;
   height: calc(22vh + 10vw);
   width: min(90%, 640px);
-  margin: 8vh auto;
+  margin: calc(2vh + 5vw) auto;
   background: rgba(4, 10, 26, 0.95);
   padding: 3vh 3vw;
   border: 4px double #ebff00;
