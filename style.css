@@ -38,7 +38,7 @@ body::before {
   border: 4px double #ebff00;
   border-radius: 2em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
   line-height: 1.5;
 }
 
@@ -66,7 +66,7 @@ body::before {
 label {
   display: block;
   margin-top: 2vh;
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
 }
 
 input[type="text"],
@@ -75,7 +75,7 @@ textarea {
   padding: 1em;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
   margin-top: 0.5em;
   background: #fff;
   color: #000;
@@ -90,7 +90,7 @@ textarea:focus {
 
 .choices label {
   display: block;
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
   margin-bottom: 0.5em;
   cursor: pointer;
 }
@@ -111,7 +111,7 @@ textarea:focus {
   color: white;
   border: none;
   padding: 12px 24px;
-  font-size: clamp(1rem, 12px + 0.5vw, 1.5rem);
+  font-size: clamp(1rem, 20px + 0.3vw, 1.5rem);
   border-radius: 0.5em;
   cursor: pointer;
   transition: background 0.2s;
@@ -146,7 +146,7 @@ textarea:focus {
 
   .form-container.question {
     top: 14vh;
-    height: 75vh;
+    height: 40vh;
     margin: 6vh auto;
   }
 }
