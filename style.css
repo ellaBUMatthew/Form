@@ -1,3 +1,4 @@
+/* =============== GENERAL STYLES =============== */
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-image: url("https://i.postimg.cc/RZk8tTsV/Brainyanihan-BG.webp");
@@ -5,56 +6,59 @@ body {
   background-position: center;
   margin: 0;
   color: white;
+  scroll-behavior: smooth;
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 0;
   pointer-events: none;
 }
 
+/* =============== HEADER =============== */
 .main-header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px;
+  padding: 2vh 0;
   text-align: center;
   z-index: 10;
-  font-size: 22px;
-  background: transparent;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  background: transparent; /* ready for your image later */
 }
 
+/* =============== INSTRUCTIONS =============== */
 .instructions {
-  margin-top: 18vh;
-  margin-bottom: 10px;
-  max-width: 600px;
+  margin-top: 16vh;
+  width: min(90%, 640px);
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  color: white;
-  font-size: 16px;
-  line-height: 1.5;
-  background: rgba(4,10,26,1);
-  padding: 10px 40px;
+  padding: 24px;
+  background: rgba(4, 10, 26, 0.95);
   border: 4px double #ebff00;
-  border-radius: 2.5em;
+  border-radius: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  line-height: 1.5;
 }
 
+/* =============== QUESTION SECTIONS (STICKY + SAME WIDTH/HEIGHT) =============== */
 .form-container.question {
   position: sticky;
-  top: 20vh;
-  height: 60vh;
-  max-height: calc(60vh - 50px);
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(4,10,26,1);
-  padding: 40px;
+  top: 18vh; /* below header */
+  height: 60vh; /* consistent height for stacking */
+  width: min(90%, 640px);
+  margin: 8vh auto;
+  background: rgba(4, 10, 26, 0.95);
+  padding: 3vh 3vw;
   border: 4px double #ebff00;
-  border-radius: 2.5em;
+  border-radius: 2em;
   z-index: 1;
+
+  /* reveal animation start */
   transform: scale(0.95);
   opacity: 0.5;
   transition: transform 0.6s ease-out, opacity 0.6s ease-out;
@@ -65,51 +69,58 @@ body::before {
   opacity: 1;
 }
 
+/* =============== FORM ELEMENTS =============== */
 label {
   display: block;
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 2vh;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 1em;
   border: 1px solid #dadce0;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-top: 6px;
+  border-radius: 6px;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  margin-top: 0.5em;
+  background: #fff;
+  color: #000;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
   outline: none;
   border-color: #1a73e8;
-  box-shadow: 0 0 0 2px rgba(26,115,232,0.1);
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
 }
 
 .choices label {
   display: block;
-  font-size: 14px;
-  margin-bottom: 4px;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  margin-bottom: 0.5em;
   cursor: pointer;
 }
 
+/* =============== SUBMIT SECTION =============== */
 .submit-section {
-  max-width: 200px;
-  margin: 20vh auto;
+  width: min(90%, 640px);
+  margin: 15vh auto;
   text-align: center;
-  background: rgba(4,10,26,1);
-  padding: 10px;
+  background: rgba(4, 10, 26, 0.95);
+  padding: 24px;
   border: 4px double #ebff00;
-  border-radius: 2.5em;
+  border-radius: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .submit-btn {
   background-color: #1a73e8;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  border-radius: 0.5em;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -118,10 +129,42 @@ input[type="text"]:focus, textarea:focus {
   background-color: #1765c0;
 }
 
+/* =============== FOOTER =============== */
 .main-footer {
   text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-  font-size: 14px;
+  padding: 3vh 2vw;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
   color: #aaa;
+}
+
+/* =============== RESPONSIVE ADJUSTMENTS =============== */
+@media (max-width: 768px) {
+  .instructions,
+  .form-container.question,
+  .submit-section {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 1.5em;
+  }
+
+  .main-header {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+
+  .form-container.question {
+    top: 14vh;
+    height: 75vh;
+    margin: 6vh auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .instructions,
+  .form-container.question,
+  .submit-section {
+    max-width: 700px;
+  }
 }
