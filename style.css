@@ -75,7 +75,7 @@ textarea {
   padding: 1em;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: calc(30px + 0.2vw);
+  font-size: calc(22px - 0.2vw);
   margin-top: 0.5em;
   background: #fff;
   color: #000;
@@ -90,7 +90,7 @@ textarea:focus {
 
 .choices label {
   display: block;
-  font-size: calc(30px + 0.2vw);
+  font-size: calc(30px - 0.2vw);
   margin-bottom: 0.5em;
   cursor: pointer;
 }
@@ -111,7 +111,7 @@ textarea:focus {
   color: white;
   border: none;
   padding: 12px 24px;
-  font-size: calc(30px + 0.2vw);
+  font-size: calc(30px - 0.2vw);
   border-radius: 0.5em;
   cursor: pointer;
   transition: background 0.2s;
@@ -125,7 +125,7 @@ textarea:focus {
   text-align: center;
   padding: 3vh 2vw;
   background: rgba(0, 0, 0, 0.6);
-  font-size: calc(30px + 0.2vw);
+  font-size: calc(30px - 0.2vw);
   color: #aaa;
 }
 
