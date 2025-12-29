@@ -66,7 +66,7 @@ body::before {
 label {
   display: block;
   margin-top: 2vh;
-  font-size: calc(30px - 1vw);
+  font-size: calc(48px - 1.5vw);
 }
 
 input[type="text"],
@@ -75,7 +75,7 @@ textarea {
   padding: 1em;
   border: 1px solid #dadce0;
   border-radius: 6px;
-  font-size: calc(26px - 1vw);
+  font-size: calc(22px - 0.6vw);
   margin-top: 0.5em;
   background: #fff;
   color: #000;
@@ -147,7 +147,7 @@ textarea:focus {
   .form-container.question {
     top: 14vh;
     height: 40vh;
-    margin: 6vh auto;
+    margin: calc(2vh + 5vw) auto;
   }
 }
 
