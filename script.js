@@ -18,14 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
+    const q1checkboxes = Array.from(document.querySelectorAll('input[name^="q1-"]:checked'))
+      .map(el => el.parentElement.textContent.trim())
+      .join(", ");
+
+    const q5radio = document.querySelector('input[name="q5"]:checked')?.value || "";
+
     const data = {
-      source: Array.from(document.querySelectorAll('input[name^="q1-"]:checked'))
-        .map(el => el.value)
-        .join(", "),
+      source: q1checkboxes,
       joining: document.getElementById("joining").value,
       expectations: document.getElementById("expectations").value,
       learn: document.getElementById("learn").value,
-      familiarity: document.querySelector('input[name="q5"]:checked')?.value || ""
+      familiarity: q5radio
     };
 
     fetch("https://script.google.com/macros/s/AKfycbxFP2QbYgZO7UOMEDxZc-2n436g5KFccs-BxAX3tcmFeHzxO4arb0Jxs6BTtvoLovs/exec", {
