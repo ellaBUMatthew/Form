@@ -90,7 +90,7 @@ textarea:focus {
 
 .choices label {
   display: block;
-  font-size: calc(48px - 1.5vw);
+  font-size: calc(44px - 2vw);
   margin-bottom: 0.5em;
   cursor: pointer;
 }
