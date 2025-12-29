@@ -33,7 +33,7 @@ body::before {
   width: min(90%, 640px);
   margin-left: auto;
   margin-right: auto;
-  padding: 24px;
+  padding: 10px;
   background: rgba(4, 10, 26, 0.95);
   border: 4px double #ebff00;
   border-radius: 2em;
@@ -90,7 +90,7 @@ textarea:focus {
 
 .choices label {
   display: block;
-  font-size: calc(30px - 1vw);
+  font-size: calc(48px - 1.5vw);
   margin-bottom: 0.5em;
   cursor: pointer;
 }
