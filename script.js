@@ -15,21 +15,20 @@ document.addEventListener("DOMContentLoaded", function() {
   questions.forEach(section => observer.observe(section));
 
   const form = document.getElementById("survey-form");
+
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const q1checkboxes = Array.from(document.querySelectorAll('input[name^="q1-"]:checked'))
-      .map(el => el.parentElement.textContent.trim())
+    const sources = Array.from(document.querySelectorAll('input[name="source"]:checked'))
+      .map(el => el.value)
       .join(", ");
 
-    const q5radio = document.querySelector('input[name="q5"]:checked')?.value || "";
-
     const data = {
-      source: q1checkboxes,
-      joining: document.getElementById("joining").value,
-      expectations: document.getElementById("expectations").value,
-      learn: document.getElementById("learn").value,
-      familiarity: q5radio
+      source: sources,
+      joining: document.getElementById("joining").value.trim(),
+      expectations: document.getElementById("expectations").value.trim(),
+      learn: document.getElementById("learn").value.trim(),
+      familiarity: document.querySelector('input[name="familiarity"]:checked')?.value || ""
     };
 
     fetch("https://script.google.com/macros/s/AKfycbxFP2QbYgZO7UOMEDxZc-2n436g5KFccs-BxAX3tcmFeHzxO4arb0Jxs6BTtvoLovs/exec", {
@@ -43,5 +42,4 @@ document.addEventListener("DOMContentLoaded", function() {
     form.reset();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-
 });
