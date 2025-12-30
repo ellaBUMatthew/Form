@@ -129,8 +129,6 @@ textarea:focus {
 
 .submit-section {
   width: min(90%, 640px);
-  left: 50%;
-  transform: translateX(-50%); 
   margin: 15vh auto;
   text-align: center;
   background: rgba(4, 10, 26, 0.95); 
