@@ -32,8 +32,6 @@ body::before {
   position: fixed;
   top: 10vh;
   width: min(90%, 640px);
-  left: 50%; 
-  transform: translateX(-50%);
   text-align: center;
   z-index: 8;
   background: rgba(4, 10, 26, 0.95);
@@ -76,8 +74,7 @@ form {
   top: 24vh;
   height: calc(18vh + 15vw);
   width: min(90%, 640px);
-  left: 50%;
-  transform: translateX(-50%) scale(0.95);
+  transform: scale(0.95);
   margin: calc(2vh + 5vw) auto;
   background: rgba(4, 10, 26, 0.95);
   padding: 3vh 3vw;
@@ -89,7 +86,7 @@ form {
 } 
 
 .form-container.question.active {
-  transform: translateX(-50%) scale(1);
+  transform: scale(1);
   opacity: 1; 
 } 
 
