@@ -28,10 +28,9 @@ body::before {
   background: transparent;
 }
 
-/* === FIXED INSTRUCTIONS === */
 .instructions {
   position: fixed;
-  top: 10vh; /* sits just below the header */
+  top: 10vh;
   width: min(90%, 640px);
   left: 50%;
   transform: translateX(-50%);
@@ -46,15 +45,13 @@ body::before {
   line-height: 1.4;
 }
 
-/* Add space below fixed instructions */
 form {
-  margin-top: 25vh; /* ensures content starts below header + instructions */
+  margin-top: 25vh;
 }
 
-/* === SECTION TITLES (A & B) === */
 .section-title {
   position: sticky;
-  top: 18vh; /* below instructions */
+  top: 18vh;
   width: min(90%, 640px);
   left: 50%;
   transform: translateX(-50%);
@@ -78,10 +75,10 @@ form {
   transform: scale(1.02);
 }
 
-/* === QUESTIONS === */
+
 .form-container.question {
   position: sticky;
-  top: 24vh; /* below section title */
+  top: 24vh; 
   height: calc(18vh + 15vw);
   width: min(90%, 640px);
   left: 50%;
