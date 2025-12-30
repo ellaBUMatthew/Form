@@ -49,6 +49,7 @@ form {
   margin-top: 25vh;
 }
 
+/* === SECTION TITLES (A & B) === */
 .section-title {
   position: sticky;
   top: 18vh;
@@ -75,10 +76,10 @@ form {
   transform: scale(1.02);
 }
 
-
+/* === QUESTIONS === */
 .form-container.question {
   position: sticky;
-  top: 24vh; 
+  top: 24vh;
   height: calc(18vh + 15vw);
   width: min(90%, 640px);
   left: 50%;
