@@ -41,7 +41,8 @@ body::before {
   border-radius: 2em; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); 
   font-size: calc(28px - 0.8vw);
-  padding: 1rem 1.5rem; line-height: 1.4; 
+  padding: 1rem 1.5rem; 
+  line-height: 1.4; 
 } 
 
 form { 
@@ -200,5 +201,18 @@ textarea:focus {
   .submit-section,
   .section-title {
     max-width: 600px; 
+  }
+
+  .instructions {
+    top: 11.5vh;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .section-title{
+    top:20vh;
+  }
+  
+  .form-container.question{
+    top:30vh;
   }
 }
