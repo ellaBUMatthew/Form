@@ -211,6 +211,6 @@ textarea:focus {
   .form-container.question,
   .submit-section,
   .section-title {
-    max-width: 700px;
+    max-width: 600px;
   }
 }
