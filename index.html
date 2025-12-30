@@ -15,52 +15,85 @@
   </section>
 
   <form id="survey-form">
-  <section class="form-container question">
-    <h2>1. How did you hear about this program?</h2>
-    <div class="choices">
-      <label><input type="checkbox" name="source" value="Social Media"> Social Media</label>
-      <label><input type="checkbox" name="source" value="School Announcement"> School Announcement</label>
-      <label><input type="checkbox" name="source" value="Friend"> Friend</label>
-      <label><input type="checkbox" name="source" value="Adviser"> Adviser/Teacher</label>
-      <label><input type="checkbox" name="source" value="Other"> Other</label>
+
+    <div class="section-title">
+      <h2>A. Participant Information (for records & certificates)</h2>
     </div>
-  </section>
 
-  <section class="form-container question">
-    <h2>2. Why did you decide to join this program?</h2>
-    <textarea id="joining" name="joining" rows="5" placeholder="Enter your response"></textarea>
-  </section>
+    <section class="form-container question">
+      <h2>1. Full Name (as you want it on the certificate)</h2>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+    </section>
 
-  <section class="form-container question">
-    <h2>3. What are your expectation/s from this program?</h2>
-    <textarea id="expectations" name="expectations" rows="5" placeholder="Enter your response"></textarea>
-  </section>
+    <section class="form-container question">
+      <h2>2. Course/Program (e.g. BS Geology)</h2>
+      <input type="text" id="course" name="course" placeholder="Enter your course or program">
+    </section>
 
-  <section class="form-container question">
-    <h2>4. What topics or skills do you hope to learn or improve?</h2>
-    <textarea id="learn" name="learn" rows="5" placeholder="Enter your response"></textarea>
-  </section>
+    <section class="form-container question">
+      <h2>3. Year Level</h2>
+      <input type="text" id="yearlevel" name="yearlevel" placeholder="Enter your year level">
+    </section>
 
-  <section class="form-container question">
-    <h2>5. How familiar are you with this program?</h2>
-    <div class="choices">
-      <label><input type="radio" name="familiarity" value="1"> 1 - Not familiar at all</label>
-      <label><input type="radio" name="familiarity" value="2"> 2</label>
-      <label><input type="radio" name="familiarity" value="3"> 3</label>
-      <label><input type="radio" name="familiarity" value="4"> 4</label>
-      <label><input type="radio" name="familiarity" value="5"> 5 - Very familiar</label>
+    <section class="form-container question">
+      <h2>4. Email Address (for the distribution of certificates)</h2>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+    </section>
+
+    <section class="form-container question">
+      <h2>5. Facebook Link (optional)</h2>
+      <input type="text" id="facebook" name="facebook" placeholder="Enter your Facebook profile link (optional)">
+    </section>
+
+    <div class="section-title">
+      <h2>B. Background & Expectations</h2>
     </div>
-  </section>
 
-  <section class="submit-section">
-    <button type="submit" class="submit-btn">Submit</button>
-  </section>
-</form>
+    <section class="form-container question">
+      <h2>1. How did you hear about this program?</h2>
+      <div class="choices">
+        <label><input type="checkbox" name="source" value="Social Media"> Social Media</label>
+        <label><input type="checkbox" name="source" value="School Announcement"> School Announcement</label>
+        <label><input type="checkbox" name="source" value="Friend"> Friend</label>
+        <label><input type="checkbox" name="source" value="Adviser"> Adviser/Teacher</label>
+        <label><input type="checkbox" name="source" value="Other"> Other</label>
+      </div>
+    </section>
 
-  
+    <section class="form-container question">
+      <h2>2. Why did you decide to join this program?</h2>
+      <textarea id="joining" name="joining" rows="5" placeholder="Enter your response"></textarea>
+    </section>
+
+    <section class="form-container question">
+      <h2>3. What are your expectation/s from this program?</h2>
+      <textarea id="expectations" name="expectations" rows="5" placeholder="Enter your response"></textarea>
+    </section>
+
+    <section class="form-container question">
+      <h2>4. What topics or skills do you hope to learn or improve?</h2>
+      <textarea id="learn" name="learn" rows="5" placeholder="Enter your response"></textarea>
+    </section>
+
+    <section class="form-container question">
+      <h2>5. How familiar are you with this program?</h2>
+      <div class="choices">
+        <label><input type="radio" name="familiarity" value="1"> 1 - Not familiar at all</label>
+        <label><input type="radio" name="familiarity" value="2"> 2</label>
+        <label><input type="radio" name="familiarity" value="3"> 3</label>
+        <label><input type="radio" name="familiarity" value="4"> 4</label>
+        <label><input type="radio" name="familiarity" value="5"> 5 - Very familiar</label>
+      </div>
+    </section>
+
+    <section class="submit-section">
+      <button type="submit" class="submit-btn">Submit</button>
+    </section>
+  </form>
+
   <footer class="main-footer">
     <p>© 2025 Brainyanihan Project | Do not share your passwords in this form.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
-
