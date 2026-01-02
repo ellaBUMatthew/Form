@@ -35,7 +35,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  filter: drop-shadow(0 1vh 15px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 1vh 50px rgba(0, 0, 0, 0.8));
   z-index: 1;
   pointer-events: none;
 }
