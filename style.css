@@ -257,7 +257,7 @@ textarea:focus {
   
   .section-title{
     top: calc(215px + 5vh);
-    margin: 20vh auto 4vh
+    margin: 20vh auto 4vh;
   }
 
   .section-title h2{
@@ -265,8 +265,8 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(340px + 5vh);
-    margin: 70px auto;
+    top: calc(330px + 5vh);
+    margin: 70px auto 100px;
   }
 
   .form-container.question h2{
