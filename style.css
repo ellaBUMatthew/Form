@@ -287,7 +287,7 @@ textarea:focus {
   }
 
   .section-wrapper {
-    height: 530vh;
+    height: 480vh;
   }
   
   .choices label {
@@ -316,7 +316,7 @@ textarea:focus {
   
   .form-container.question{
     top: calc(255px + 10vh);
-    height: 37.5vh;
+    height: 39vh;
   }
 
   .form-container.question h2{
