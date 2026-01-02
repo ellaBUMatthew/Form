@@ -281,7 +281,7 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(170px + 10vh);
+    top: calc(165px + 10vh);
   }
 
   .section-title h2{
@@ -289,7 +289,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(260px + 10vh);
+    top: calc(255px + 10vh);
   }
 
   .form-container.question h2{
