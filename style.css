@@ -196,9 +196,8 @@ textarea:focus {
 }
   
   .form-container.question {
-    top: calc(385px + 12.5vh); 
-    height: 40vh;
-    margin: calc(2vh + 5vw) auto; 
+    top: calc(385px + 12.5vh);
+    height: 450px;
   }
 
   .form-container.question h2 {
