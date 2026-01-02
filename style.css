@@ -49,6 +49,10 @@ form {
   margin-top: 25vh; 
 } 
 
+.section-wrapper {
+  height: 530vh;
+}
+
 .section-title {
   position: sticky;
   top: 20vh;
