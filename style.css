@@ -177,13 +177,13 @@ textarea:focus {
   color: #aaa; 
 }
 
-@media screen and (min-width: 360px) and (max-width: 768px ) and (min-height: 600px) {
+@media screen and (max-width: 768px ) {
   .instructions,
   .form-container.question,
   .submit-section,
   .section-title { 
     width: 80%;
-    max-width: 560px;
+    max-width: 600px;
   } 
 
   .section-wrapper {
@@ -236,40 +236,6 @@ textarea:focus {
     margin: 7.5vh auto;
   }
 } 
-
-@media screen and (min-width: 768px) and (min-height: 1024px) {
-  .instructions,
-  .form-container.question,
-  .submit-section,
-  .section-title {
-    max-width: 600px;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .instructions {
-    top: 14vh;
-  }
-
-  .section-wrapper {
-    height: 350vh;
-  }
-  
-  .section-title{
-    top: calc(270px + 10vh);
-  }
-
-  .section-title h2{
-    font-size: 28px;
-  }
-  
-  .form-container.question{
-    top: calc(300px +10vh);
-  }
-
-  .form-container.question h2{
-    font-size: 22px;
-  }
-}
 
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .main-header{
