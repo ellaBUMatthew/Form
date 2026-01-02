@@ -30,6 +30,14 @@ body::before {
   background-repeat: no-repeat;
 } 
 
+.main-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: drop-shadow(0 1vh 15px rgba(0, 0, 0, 0.8));
+  z-index: -1;
+}
+
 .instructions { 
   position: fixed;
   top: 10vh;
@@ -242,8 +250,8 @@ textarea:focus {
 @media (min-width: 1024px) and (min-height: 600px) {
   .main-header{
     height: 150px;
+    transform: translateY(-50px)
   }
-
   
   .instructions,
   .form-container.question,
