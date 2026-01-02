@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       familiarity: document.querySelector('input[name="familiarity"]:checked')?.value || ""
     };
 
-    fetch("https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID_HERE/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxFP2QbYgZO7UOMEDxZc-2n436g5KFccs-BxAX3tcmFeHzxO4arb0Jxs6BTtvoLovs/exec", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
