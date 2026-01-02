@@ -20,12 +20,10 @@ body::before {
 .main-header { 
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 2vh 0;
+  width: auto;
   text-align: center;
   z-index: 10;
-  font-size: calc(30px - 1vw); 
-  background: transparent;
+  background-image: url("https://i.postimg.cc/8PPLVq3S/BRAINYANIHAN.png");
 } 
 
 .instructions { 
@@ -238,6 +236,11 @@ textarea:focus {
 }
 
 @media (min-width: 1024px) and (min-height: 600px) {
+  .main-header{
+    height: 80px;
+  }
+
+  
   .instructions,
   .form-container.question,
   .submit-section,
