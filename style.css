@@ -177,7 +177,7 @@ textarea:focus {
   color: #aaa; 
 }
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 1023px ) {
   .instructions,
   .form-container.question,
   .submit-section,
