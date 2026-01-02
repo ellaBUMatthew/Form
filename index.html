@@ -5,8 +5,7 @@
 </head>
 
 <body>
-  <header class="main-header">
-  </header>
+  <header class="main-header"></header>
 
   <section class="instructions">
     <h2>Instructions</h2>
@@ -15,6 +14,7 @@
 
   <form id="survey-form">
 
+    <!-- SECTION A -->
     <div class="section-wrapper" id="section-a">
       <div class="section-title">
         <h2>A. Participant Information (for records & certificates)</h2>
@@ -46,6 +46,7 @@
       </section>
     </div>
 
+    <!-- SECTION B -->
     <div class="section-wrapper" id="section-b">
       <div class="section-title">
         <h2>B. Background & Expectations</h2>
@@ -57,7 +58,10 @@
           <label><input type="checkbox" name="source" value="Social Media"> Social Media</label>
           <label><input type="checkbox" name="source" value="Friend"> Friend</label>
           <label><input type="checkbox" name="source" value="Adviser"> Adviser/Teacher</label>
-          <label><input type="checkbox" name="source" value="Other"> Other</label>
+          <label>
+            <input type="checkbox" id="otherOption" name="source" value="Other"> Other
+          </label>
+          <textarea id="otherText" name="otherSource" rows="3" placeholder="Please specify..." style="display:none;"></textarea>
         </div>
       </section>
 
