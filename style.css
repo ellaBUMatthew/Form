@@ -24,6 +24,8 @@ body::before {
   text-align: center;
   z-index: 10;
   background-image: url("https://i.postimg.cc/8PPLVq3S/BRAINYANIHAN.png");
+  background-position: center;
+  background-size: cover;
 } 
 
 .instructions { 
