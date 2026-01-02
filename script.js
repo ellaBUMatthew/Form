@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   questions.forEach(section => observer.observe(section));
 
-  const otherCheckbox = document.getElementById("other-source");
-  const otherTextarea = document.getElementById("other-text");
+  const otherCheckbox = document.getElementById("otherOption");
+  const otherTextarea = document.getElementById("otherText");
 
   otherCheckbox.addEventListener("change", function() {
-    if(this.checked) {
+    if (this.checked) {
       otherTextarea.style.display = "block";
       otherTextarea.required = true;
     } else {
@@ -38,8 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
       .join(", ");
 
     const data = {
+      fullname: document.getElementById("fullname").value.trim(),
+      course: document.getElementById("course").value.trim(),
+      yearlevel: document.getElementById("yearlevel").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      facebook: document.getElementById("facebook").value.trim(),
       source: sources,
-      other: otherTextarea.value.trim(),
+      otherSource: otherTextarea.value.trim(),
       joining: document.getElementById("joining").value.trim(),
       expectations: document.getElementById("expectations").value.trim(),
       learn: document.getElementById("learn").value.trim(),
