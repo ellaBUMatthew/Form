@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   const questions = document.querySelectorAll(".form-container.question");
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -13,14 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
   questions.forEach(section => observer.observe(section));
 
-  const otherOption = document.getElementById("otherOption");
-  const otherText = document.getElementById("otherText");
+  const otherCheckbox = document.getElementById("other-source");
+  const otherTextarea = document.getElementById("other-text");
 
-  if (otherOption && otherText) {
-    otherOption.addEventListener("change", () => {
-      otherText.style.display = otherOption.checked ? "block" : "none";
-    });
-  }
+  otherCheckbox.addEventListener("change", function() {
+    if(this.checked) {
+      otherTextarea.style.display = "block";
+      otherTextarea.required = true;
+    } else {
+      otherTextarea.style.display = "none";
+      otherTextarea.required = false;
+      otherTextarea.value = "";
+    }
+  });
 
   const form = document.getElementById("survey-form");
 
@@ -32,13 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
       .join(", ");
 
     const data = {
-      fullname: document.getElementById("fullname").value.trim(),
-      course: document.getElementById("course").value.trim(),
-      yearlevel: document.getElementById("yearlevel").value.trim(),
-      email: document.getElementById("email").value.trim(),
-      facebook: document.getElementById("facebook").value.trim(),
       source: sources,
-      otherSource: otherText.style.display === "block" ? otherText.value.trim() : "",
+      other: otherTextarea.value.trim(),
       joining: document.getElementById("joining").value.trim(),
       expectations: document.getElementById("expectations").value.trim(),
       learn: document.getElementById("learn").value.trim(),
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     alert("✅ Thank you for submitting your response!");
     form.reset();
-    otherText.style.display = "none";
+    otherTextarea.style.display = "none";
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
