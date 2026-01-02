@@ -239,7 +239,7 @@ textarea:focus {
     padding: 0.5rem 1.5rem;
   }
 
-  label {
+  .choices label {
     font-size: 18px;
   }
 
@@ -256,7 +256,7 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(215px + 5vh);
+    top: calc(210px + 5vh);
     margin: 20vh auto 0vh;
   }
 
@@ -265,7 +265,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(330px + 5vh);
+    top: calc(325px + 2.5vh);
     margin: 70px auto 100px;
   }
 
