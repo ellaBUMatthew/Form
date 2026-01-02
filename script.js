@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+  // --- Animate question sections ---
   const questions = document.querySelectorAll(".form-container.question");
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -14,6 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   questions.forEach(section => observer.observe(section));
 
+  // --- Toggle "Other" text area visibility ---
+  const otherOption = document.getElementById("otherOption");
+  const otherText = document.getElementById("otherText");
+
+  if (otherOption && otherText) {
+    otherOption.addEventListener("change", () => {
+      otherText.style.display = otherOption.checked ? "block" : "none";
+    });
+  }
+
+  // --- Form submission ---
   const form = document.getElementById("survey-form");
 
   form.addEventListener("submit", function(e) {
@@ -24,7 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
       .join(", ");
 
     const data = {
+      fullname: document.getElementById("fullname").value.trim(),
+      course: document.getElementById("course").value.trim(),
+      yearlevel: document.getElementById("yearlevel").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      facebook: document.getElementById("facebook").value.trim(),
       source: sources,
+      otherSource: otherText.style.display === "block" ? otherText.value.trim() : "",
       joining: document.getElementById("joining").value.trim(),
       expectations: document.getElementById("expectations").value.trim(),
       learn: document.getElementById("learn").value.trim(),
@@ -40,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     alert("✅ Thank you for submitting your response!");
     form.reset();
+    otherText.style.display = "none";
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
