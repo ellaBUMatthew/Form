@@ -235,6 +235,7 @@ textarea:focus {
   .submit-section,
   .section-title {
     max-width: 700px;
+    width: 700px;
     padding: 0.5rem 1.5rem;
   }
 
