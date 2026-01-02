@@ -289,7 +289,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(270px + 10vh);
+    top: calc(260px + 10vh);
   }
 
   .form-container.question h2{
