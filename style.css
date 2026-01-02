@@ -242,6 +242,14 @@ textarea:focus {
     top: 14vh;
   }
 
+  .instructions p {
+    font-size: 16px;
+  }
+
+  .instructions h2 {
+    font-size: 24px;
+  }
+  
   .section-title{
     top:30vh;
   }
@@ -256,5 +264,9 @@ textarea:focus {
 
   .form-container.question h2{
     font-size: 22px;
+  }
+
+  .submit-section {
+    margin: 80vh auto 7.5vh;
   }
 }
