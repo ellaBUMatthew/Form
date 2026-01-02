@@ -256,7 +256,7 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(210px + 5vh);
+    top: calc(200px + 8vh);
     margin: 20vh auto 0vh;
   }
 
@@ -265,7 +265,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(325px + 2.5vh);
+    top: calc(315px + 7.5vh);
     margin: 70px auto 100px;
   }
 
