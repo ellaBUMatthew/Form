@@ -241,7 +241,7 @@ textarea:focus {
 
 @media (min-width: 1024px) and (min-height: 600px) {
   .main-header{
-    height: 80px;
+    height: 150px;
   }
 
   
