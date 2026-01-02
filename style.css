@@ -286,6 +286,10 @@ textarea:focus {
     padding: 0.5rem 1.5rem;
   }
 
+  .section-wrapper {
+    height: 530vh;
+  }
+  
   .choices label {
     font-size: 18px;
   }
