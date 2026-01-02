@@ -251,19 +251,19 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(220px + 10vh);
+    top: calc(230px + 5vh);
   }
 
   .section-title h2{
-    font-size: 28px;
+    font-size: 26px;
   }
   
   .form-container.question{
-    top: calc(320px + 10vh);
+    top: calc(330px + 5vh);
   }
 
   .form-container.question h2{
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .submit-section {
