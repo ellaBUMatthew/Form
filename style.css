@@ -243,7 +243,7 @@ textarea:focus {
   }
 
   .section-title{
-    top:26vh;
+    top:30vh;
   }
 
   .section-title h2{
@@ -251,7 +251,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top:34vh;
+    top:38vh;
   }
 
   .form-container.question h2{
