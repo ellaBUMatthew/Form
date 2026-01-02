@@ -28,6 +28,7 @@ body::before {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  pointer-events: none;
 } 
 
 .main-header::after {
@@ -35,7 +36,8 @@ body::before {
   position: absolute;
   inset: 0;
   filter: drop-shadow(0 1vh 15px rgba(0, 0, 0, 0.8));
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .instructions { 
