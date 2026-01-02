@@ -210,7 +210,7 @@ textarea:focus {
   }
   
   .section-title {
-    top: calc(200px + 12.5vh);
+    top: calc(160px + 12.5vh);
     font-size: 1.5rem; 
     padding: 1rem; 
   }
