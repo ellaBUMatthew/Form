@@ -191,7 +191,7 @@ textarea:focus {
   }
   
   .main-header {
-    height: 400px;
+    height: 375px;
     transform: translateY(-130px);
   }
 
@@ -210,7 +210,7 @@ textarea:focus {
   }
   
   .section-title {
-    top: calc(240px + 12.5vh);
+    top: calc(200px + 12.5vh);
     font-size: 1.5rem; 
     padding: 1rem; 
   }
@@ -231,6 +231,10 @@ textarea:focus {
 
   .instructions p {
     font-size: 24px;
+  }
+  
+  .choices label {
+    font-size: 22px;
   }
   
   .submit-section {
