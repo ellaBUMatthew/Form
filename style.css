@@ -177,7 +177,7 @@ textarea:focus {
   color: #aaa; 
 }
 
-@media (min-width: 360px) and (min-height: 600px) {
+@media screen and (min-width: 360px) and (max-width: 768px ) and (min-height: 600px) {
   .instructions,
   .form-container.question,
   .submit-section,
@@ -287,7 +287,7 @@ textarea:focus {
   }
 
   .section-wrapper {
-    height: 480vh;
+    height: 430vh;
   }
   
   .choices label {
