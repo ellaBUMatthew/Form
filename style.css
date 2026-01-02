@@ -20,7 +20,7 @@ body::before {
 .main-header { 
   position: fixed;
   top: 0;
-  width: auto;
+  width: 100%;
   height: 80px; 
   text-align: center;
   z-index: 10;
