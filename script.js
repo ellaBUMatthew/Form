@@ -4,11 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      } else {
-        entry.target.classList.remove("active");
-      }
+      if (entry.isIntersecting) entry.target.classList.add("active");
+      else entry.target.classList.remove("active");
     });
   }, { threshold: 0.3 });
 
@@ -52,23 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     fetch("https://script.google.com/macros/s/AKfycbxFP2QbYgZO7UOMEDxZc-2n436g5KFccs-BxAX3tcmFeHzxO4arb0Jxs6BTtvoLovs/exec", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(data)
-})
-.then(response => response.json())
-.then(result => {
-  if (result.result === "success") {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
     alert("✅ Thank you for submitting your response!");
     form.reset();
     otherTextarea.style.display = "none";
     window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    alert("⚠️ " + result.message);
-  }
-})
-.catch(error => {
-  console.error("Error submitting form:", error);
-  alert("❌ There was a problem submitting your response. Please try again.");
+  });
 });
-
