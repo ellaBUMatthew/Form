@@ -237,7 +237,7 @@ textarea:focus {
   }
 } 
 
-@media (min-width: 768px) and (min-height: 1024px) {
+@media screen and (min-width: 768px) and (min-height: 1024px) {
   .instructions,
   .form-container.question,
   .submit-section,
@@ -271,7 +271,7 @@ textarea:focus {
   }
 }
 
-@media (min-width: 1024px) and (min-height: 600px) {
+@media screen and (min-width: 1024px) and (min-height: 600px) {
   .main-header{
     height: 300px;
     transform: translateY(-100px)
