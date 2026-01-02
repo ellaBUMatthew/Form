@@ -177,7 +177,7 @@ textarea:focus {
   color: #aaa; 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 360px) and (min-height: 600px) {
   .instructions,
   .form-container.question,
   .submit-section,
