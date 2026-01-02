@@ -185,6 +185,10 @@ textarea:focus {
     width: 80%;
     max-width: 560px;
   } 
+
+  .section-wrapper {
+    height: 200vh;
+  }
   
   .main-header {
     height: 300px;
@@ -308,6 +312,7 @@ textarea:focus {
   
   .form-container.question{
     top: calc(255px + 10vh);
+    height: 37.5vh;
   }
 
   .form-container.question h2{
