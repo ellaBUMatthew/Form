@@ -216,8 +216,12 @@ textarea:focus {
     top: 14vh;
   }
 
+  .section-wrapper {
+    height: 350vh;
+  }
+  
   .section-title{
-    top:20vh;
+    top: calc(300px + 10vh);
   }
 
   .section-title h2{
@@ -260,7 +264,7 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(190px + 8vh);
+    top: calc(170px + 10vh);
   }
 
   .section-title h2{
@@ -268,7 +272,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top: calc(305px + 7.5vh);
+    top: calc(270px + 10vh);
   }
 
   .form-container.question h2{
