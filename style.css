@@ -181,13 +181,13 @@ textarea:focus {
   } 
   
   .form-container.question {
-    top: 20vh; 
+    top: calc(380px + 10vh); 
     height: 40vh;
     margin: calc(2vh + 5vw) auto; 
   } 
   
   .section-title {
-    top: 16vh;
+    top: calc(340px + 10vh);
     font-size: 1.5rem; 
     padding: 1rem; 
   } 
@@ -221,7 +221,7 @@ textarea:focus {
   }
   
   .section-title{
-    top: calc(300px + 10vh);
+    top: calc(270px + 10vh);
   }
 
   .section-title h2{
@@ -229,7 +229,7 @@ textarea:focus {
   }
   
   .form-container.question{
-    top:30vh;
+    top: calc(300px +10vh);
   }
 
   .form-container.question h2{
