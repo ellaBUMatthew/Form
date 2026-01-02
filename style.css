@@ -187,11 +187,12 @@ textarea:focus {
   } 
 
   .section-wrapper {
-    height: 200vh;
+    height: 300vh;
   }
   
   .main-header {
-    height: 300px;
+    height: 400px;
+    transform: translateY(-130px);
   }
 
   #otherText {
@@ -200,7 +201,7 @@ textarea:focus {
 }
   
   .form-container.question {
-    top: calc(385px + 12.5vh);
+    top: calc(305px + 12.5vh);
     height: 450px;
   }
 
@@ -209,7 +210,7 @@ textarea:focus {
   }
   
   .section-title {
-    top: calc(340px + 12.5vh);
+    top: calc(240px + 12.5vh);
     font-size: 1.5rem; 
     padding: 1rem; 
   }
