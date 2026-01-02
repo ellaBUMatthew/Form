@@ -25,7 +25,7 @@ body::before {
   text-align: center;
   z-index: 10;
   background-image: url("https://i.postimg.cc/8PPLVq3S/BRAINYANIHAN.png");
-  background-position: 50% 0%;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 } 
@@ -250,6 +250,7 @@ textarea:focus {
 @media (min-width: 1024px) and (min-height: 600px) {
   .main-header{
     height: 300px;
+    transform: translateY(100px)
   }
   
   .instructions,
