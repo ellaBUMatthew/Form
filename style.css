@@ -190,7 +190,12 @@ textarea:focus {
   .main-header {
     font-size: 1.1rem;
     padding: 16px; 
-  } 
+  }
+
+  #otherText {
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
   
   .form-container.question {
     top: calc(380px + 10vh); 
