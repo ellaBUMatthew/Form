@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  // --- Animate question sections ---
   const questions = document.querySelectorAll(".form-container.question");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   questions.forEach(section => observer.observe(section));
 
-  // --- Toggle "Other" text area visibility ---
   const otherOption = document.getElementById("otherOption");
   const otherText = document.getElementById("otherText");
 
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  // --- Form submission ---
   const form = document.getElementById("survey-form");
 
   form.addEventListener("submit", function(e) {
